@@ -1,12 +1,11 @@
 import React from 'react';
+import HawkList from "./components/HawkList";
 import './App.css';
 
-const App: React.FC = () => {
+export default function App() {
   return (
-    <div className="App">
-      <h1>hello world</h1>
+    <div className="bg-gray-200 p-6 h-screen">
+      <HawkList />
     </div>
   );
 }
-
-export default App;
