@@ -25,7 +25,7 @@ export default function HawkList() {
 
     useEffect(() => {
         fetchHawks();
-    });
+    }, [params]);
 
     const fetchHawks = useCallback(async () => {
         const url = new URL(`${API_URL}/list`);
